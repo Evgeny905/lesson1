@@ -32,5 +32,7 @@ for k in numbers:
                 primes.remove(k)
             break
 
+primes.remove(1)
+
 print('Primes:', primes)
 print('Not_primes:', not_primes)
