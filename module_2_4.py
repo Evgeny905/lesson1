@@ -4,8 +4,12 @@ primes = []
 
 not_primes = []
 
+is_prime = False
+
+
 for i in numbers:
-    for j in range(1, i - 1):
-        if i // j:
-            primes = i
-            print(primes)
+    for j in range(2, i-1):
+        if i % j == 0:
+            primes = [i]
+        else: not_primes = [i]
+        print(not_primes)
