@@ -12,6 +12,8 @@ for i in numbers:
             is_prime = True
             if is_prime:
                 primes.append(i)
+            else:
+                not_primes.append(i)
             break
 
 for i in numbers:
