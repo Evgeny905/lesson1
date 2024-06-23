@@ -11,3 +11,5 @@ while index_spisok < max_spisok:
     index_spisok = index_spisok + 1
     if my_list[index_spisok] > 0:
         print(my_list[index_spisok])
+    elif my_list[index_spisok] < 0:
+        break
