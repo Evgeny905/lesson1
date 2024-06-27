@@ -24,7 +24,7 @@ def is_contains(y, z):
         else:
             return True
     for j in range(0, len(z)):
-        if z[i].lower() == string:
+        if z[j].lower() == string:
             continue
         else:
             return False
