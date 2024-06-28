@@ -7,27 +7,19 @@ def count_calls():
 
 
 def string_info(x):
-    global calls
     count_calls()
-    string = (len(x), x.upper(), x.lower())
-    return string
+    return (len(x), x.upper(), x.lower())
 
 
-def is_contains(y, z):
-    global calls
+def is_contains(stroka, spisok):
     count_calls()
-    string = y.lower()
-    a = False
-    for i in range(0, len(z)):
-        if z[i].lower() != string:
+    string = stroka.lower()
+    for i in range(0, len(spisok)):
+        if spisok[i].lower() != string:
             continue
         else:
             return True
-    for j in range(0, len(z)):
-        if z[j].lower() == string:
-            continue
-        else:
-            return False
+    return False
 
 
 print(string_info('Capybara'))
